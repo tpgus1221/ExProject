@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/back_2"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            ></ImageButton>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_13"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textScaleX="1.5"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Locker"
+            android:textColor="#3590D5"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/setting_1"
+            android:src="@drawable/seeting"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            ></ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 이미지 바꿀지 모르니 일단 아이디 만들어놓음 -->
+        <ImageView
+            android:id="@+id/user_imege"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/user"
+            android:layout_marginTop="100dp"></ImageView>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OOO님"
+            android:textSize="20dp"
+            android:textColor="@color/black"></TextView>
+
+        <android.widget.Button
+            android:id="@+id/check_locker"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:text="사물함 확인"
+            android:textSize="17dp"
+            android:background="#B8DBEA"
+            android:layout_gravity="center"
+            />
+
+        <!--OC 가 그냥 Open Close 앞에 부분만 따서 OC 라고 함-->
+        <android.widget.Button
+            android:id="@+id/OC_log"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:text="개폐 기록"
+            android:textSize="17dp"
+            android:background="#B8DBEA"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/logout"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+
+                android:layout_marginLeft="70dp"
+                android:text="로그 아웃"
+                android:textSize="15dp"
+                android:background="#B8DBEA"
+                android:layout_gravity="center"
+                />
+
+            <android.widget.Button
+                android:id="@+id/Del_account"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:text="회원 탈퇴"
+                android:textSize="15dp"
+                android:background="#B8DBEA"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

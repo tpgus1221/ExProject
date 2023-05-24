@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="블루투스 설정">
+        <SwitchPreference
+            android:title="앱 사용 중에만 켜기"
+            android:key="bluetooth"
+            android:summaryOff="앱을 끄더라도 블루투스는 켜져있습니다."
+            android:summaryOn="앱 사용 중에만 블루투스가 켜져있습니다."/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="알람 설정">
+        <SwitchPreference
+            android:title="알람 허용"
+            android:key="alarm"
+            android:summaryOff="팝업 알람을 받지 않습니다."
+            android:summaryOn="팝업 알람을 받습니다."
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <!--
+    <Preference
+        android:title="블루투스 설정"
+        android:summary="블루투스 사용 방식 설정"
+        android:key="bluetooth_seting"/>
+
+    <Preference
+        android:title="알림 설정"
+        android:summary="알람 받을지 여부 설정"
+        android:key="alarm_setting"/>
+    -->
+
+
+    <!--
+    <PreferenceScreen
+        android:title="블루투스 설정"
+        android:summary="블루투스 사용 방식 설정"
+        android:fragment="com.example.cap01.SettingFragment"
+        android:key="bluetooth_seting">
+        <PreferenceCategory
+            android:title="블루투스 설정">
+            <SwitchPreference
+                android:title="앱 사용 중에만 켜기"
+                android:key="bluetooth"
+                android:summaryOff="앱을 끄더라도 블루투스는 켜져있습니다."
+                android:summaryOn="앱 사용 중에만 블루투스가 켜져있습니다."/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="알림 설정"
+        android:summary="알람 받을지 여부 설정"
+        android:fragment="com.example.cap01.SettingFragment"
+        android:key="alarm_setting">
+        <PreferenceCategory android:title="알람 설정">
+            <SwitchPreference
+                android:title="알람 허용"
+                android:key="alarm"
+                android:summaryOff="팝업 알람을 받지 않습니다."
+                android:summaryOn="팝업 알람을 받습니다."
+                android:defaultValue="true"/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    -->
+</PreferenceScreen>
