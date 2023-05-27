@@ -15,8 +15,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
         <LinearLayout
             android:id="@+id/locker1"
@@ -25,7 +26,6 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="15dp"
             android:layout_weight="1"
-            android:background="#FF0000"
             android:orientation="horizontal" />
 
         <LinearLayout
@@ -34,9 +34,14 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="30dp"
-            android:background="#00FF00"
             android:layout_weight="1"
             android:orientation="horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
     </LinearLayout>
 
 </LinearLayout>
