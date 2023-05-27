@@ -20,6 +20,8 @@ public class CheckLocker extends AppCompatActivity {
         int locker_1 = 0; // locker_1 값
         int locker_2 = 1; // locker_2 값
 
+        //브랜치 실험용 변경
+
         if (locker_1 == 0)
             lockerlayout1.setBackgroundColor(Color.GREEN);
         else
